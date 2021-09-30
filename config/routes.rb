@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   resources :books
   root 'books#index'
 
-  get ':controller(/:action(/:id))'
+  resources :books
+  # get ':controller(/:action(/:id))'
 
   # get 'books'
   # get 'books(/:title)'
